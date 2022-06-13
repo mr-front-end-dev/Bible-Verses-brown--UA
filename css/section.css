@@ -2,6 +2,11 @@
   padding: 15px;
 }
 
+.section__content--text {
+  font-size: 20px;
+  text-align: left;
+}
+
 .section--h1 {
   text-align: center;
 }
@@ -16,19 +21,29 @@
 }
 
 .section__button {
-  background-color: hsl(0, 0%, 65%);
+  background-color: hsl(0, 0%, 83%);
   border-style: none;
   font-size: 14px;
   padding: 8px;
   margin: 5px;
-  transition: 0.1s;
-}
-
-.section__button:hover {
-  background-color: hsl(0, 0%, 75%);
+  cursor: context-menu; 
 }
 
 .section__button--link {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   text-decoration: none;
+  cursor: context-menu;
+}
+
+.section--link {
+  font-size: 20px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+}
+
+@media(min-width: 411px) {
+  .section--link {
+    font-size: 15px;
+  }
 }
